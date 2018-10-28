@@ -13,24 +13,26 @@ class Board extends Component{
   render(){
     return(
       <table>
-      {this.state.board.map((row,i)=>{
-        return <tr>
-        {row.map((square)=>{
-          if (i === 3){
-           return <td colSpan={4}>{square}</td>
-         } else if (i === 4) {
-           return <td colSpan={2}>{square}</td>
+      {this.state.board.map((row, i)=>{return (<tr>
+        row.map((square)=>{
+          if (i === 4){
+           return <td colSpan=4>{square}</td>
+          } else if (i === 5) {
+           return <td colSpan=2>{square}</td>
           } else {
             return <td>{square}</td>
          }
-          // return <td>
-          // {square}</td>
-        })}</tr>})}
+
+          })</tr>)}
+
+
+        )}
 
       </table>
     )
   }
 
 }
+
 
 export default Board
