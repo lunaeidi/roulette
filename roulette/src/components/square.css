@@ -1,5 +1,5 @@
 div{
-  border: 1px solid red
+  /* border: 1px solid red */
 }
 
 .value{
@@ -7,4 +7,15 @@ div{
   left: 10px;
   width: 30px;
   height: 30px;
+}
+.secondRow {
+  height:30px;
+}
+
+.thirdRow {
+  height: 10px;
+
+}
+.firstRow {
+  height: 10px;
 }
